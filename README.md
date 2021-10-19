@@ -24,10 +24,21 @@ JupyterLab - [Install JupyterLab](https://jupyterlab.readthedocs.io/en/stable/ge
 
 ## Examples
 
-As we can see here the y value classes are very imbalanced:
-![y_class_imbalanced](Resources/Images/balanced_classes.png)
+- An ARMA model is used to predict Yen returns over a five day period
+![returns_forecast](Resources/Images/arma_returns_forecast.png)
 
-Here is an example of a model, in this case the ClusterCentroid algorithm, balancing the classes uses Undersampling
+- Based on the p-values of the lags, an ARMA is not a good fit for this data because all values are greater than 0.05, meaning there is no statistically relevant data present
+![arma_summary](Resources/Images/arma_summary.png)
+
+- An ARIMA model is used to predict the settle price of Yen over a five day period
+![price_forecast](Resources/Images/arima_price_forecast.png)
+
+- The model predicts that Yen will rise by 4 over the next 5 days. However, since all p-values are greater than 0.05 we know that no statistically relevant data is present and the model is not a good fit
+![arima_summary](Resouces/Images/arima_summary.png)
+
+- 
+
+
 
 ---
 
